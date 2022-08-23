@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: url(./images/bg-mobile.png)center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 14px;
+}
+
+.container {
+    height: 14.3em;
+    max-width: 23.2em;
+    background: hsl(228, 56%, 26%);
+    margin-bottom: 15px;
+    border-radius: 10px 100px 10px 10px;
+    padding: 40px;
+}
+
+.logos {
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0 0;
+}
+
+.content {
+    height: 11.43em;
+    max-width: 23.2em;
+    background: hsl(228, 56%, 26%);
+    border-radius: 10px 10px 10px 10px;
+    padding: 40px;
+    position: relative;
+}
+
+
+.content > p {
+    font-size: 1em;
+}
+
+.absolute {
+    height: 70px;
+    width: 180px;
+    background-color: white;
+    color: hsl(229, 7%, 55%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9em;
+    position: absolute;
+    top: 120px;
+    left: 70px;
+}
+
+.progressBar {
+    margin: 10px 0;
+    width: 100%;
+    position: relative;
+    
+}
+
+input[type=range] {
+    width: 100%;
+    -webkit-appearance: none;
+    background: hsl(229, 57%, 11%);
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.track {
+    position: absolute;
+    height: 16px;
+    width: 80%;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+    top: 2px;
+    left: 0;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 2px;
+}
+
+
+.gb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.absolute b {
+    color: hsl(229, 57%, 11%);
+    font-size: 3em;
+    margin-right: 10px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* *{border: 1px solid black;} */
+
+    body {
+        background: url(./images/bg-desktop.png);
+        background-color: hsl(229, 57%, 11%);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 0px;
+        width: 950px;
+    }
+
+    .container {
+        max-width: 350px;
+        margin: 0;
+    }
+
+    .content {
+        max-width: 540px;
+        align-self: flex-end;
+    }
+
+    .absolute {
+        top: -50px;
+        left: 317px;
+    }
+
+}
