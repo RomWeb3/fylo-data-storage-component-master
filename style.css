@@ -160,4 +160,19 @@ input[type=range]::-webkit-slider-thumb {
         left: 317px;
     }
 
+    .triangle {
+        height: 0;
+        width: 0;
+        border-top: 5px solid plum;
+        border-bottom: 5px solid darkgreen;
+        border-left: 5px solid black;
+        border-right: 5px solid blue;
+        border-width: 26px;
+        border-color: transparent;
+        border-right-color: white;
+        position: absolute;
+        top: -10px;
+        right: 43px;
+    }
+
 }
